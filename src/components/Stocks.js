@@ -12,7 +12,6 @@ function Stocks(){
         const fetchData = async () =>{
             try {
                 const response = await axios.all(orgArray.map((company) => {
-
                     return axios.get(`${CLIENT_URL}${company}${TOKEN}`)
                 }))
                 
